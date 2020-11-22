@@ -1,0 +1,411 @@
+
+*{
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Manjari', sans-serif;
+}
+
+/* #####-----INDEX.HTML-----##### */
+
+/* -----HEADER----- */
+
+header h1{
+  text-align: center;
+  margin: 20px;
+}
+
+
+/* -----NAVEGACION----- */
+
+.barra-nav{
+  list-style: none;
+  background-color: #B989E4;
+  margin: 10px 100px;
+}
+
+.barra-nav li{
+  display: inline-block;
+}
+
+.barra-nav li a{
+  display: block;
+  text-decoration: none;
+  padding: 15px 30px;
+  color: #5BFFFF;
+}
+
+.barra-nav li a:hover{
+  background-color: #6D4E83;
+  color: white;
+}
+
+.login{
+  float: right;
+}
+
+
+/* -----SLIDER-BANNER----- */
+
+
+
+
+/* -----SECTION 1----- */
+
+
+.welcome{
+  background-color: #a8d4a2;
+  margin: 10px 100px;
+
+  text-align: center;
+}
+
+.welcome h2{
+  padding-top: 25px;
+}
+
+.welcome p{
+  padding: 25px;
+}
+
+.candyPacks{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+
+  width: 80%;
+  margin: 50px auto;
+  padding: 10px;
+
+  background-color: white;
+}
+
+.candyPacks h2, p{
+  grid-column: 1/13;
+  text-align: center;
+}
+
+.candyPacks article{
+  background-color: #D0DFAE;
+}
+
+.candyPacks article img{
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.candyPacks article h3, p{
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.arti-1{
+  grid-column: 1/7;
+}
+
+.arti-2{
+  grid-column: 7/13;
+}
+
+.arti-3{
+  grid-column: 1/5;
+}
+
+.arti-4{
+  grid-column: 5/9;
+}
+
+.arti-5{
+  grid-column: 9/13;
+}
+
+
+/* -----FOOTER----- */
+
+footer{
+  background-color: #B989E4;
+
+  margin: 10px 100px;
+}
+
+footer h3, h4{
+  text-align: center;
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+footer ul{
+  list-style: none;
+  text-align: center;
+}
+
+footer ul li{
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px 20px;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: #5BFFFF;
+}
+
+footer ul li a:hover{
+  text-decoration: underline;
+}
+
+
+/* #####-----CONTENIDO.HTML-----##### */
+
+.main-contacto{
+  width: 80%;
+  margin: 0 auto;
+
+  background-color: #D0DFAE;
+}
+
+.sec-cont-info{
+  float: left;
+  width: calc(50% - 60px);
+  padding: 30px;
+}
+
+.sec-cont-info h2, h3{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.sec-cont-aside{
+  padding: 10px;
+}
+
+
+/* #####-----LOGIN.HTML-----##### */
+
+.main-login{
+  width: 60%;
+  margin: 0 auto;
+  padding: 100px;
+
+  background-color: #a8d4a2;
+}
+
+.form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 250px;
+  margin: 10px auto;
+  padding: 50px;
+
+  text-align: center;
+  background-color: #D0DFAE;
+}
+
+.form h2{
+  padding: 20px;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form button[type="submit"]{
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px;
+
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  outline: none;
+
+  transition: 0.25s;
+}
+
+.form input[type="text"]:focus,
+.form input[type="password"]:focus{
+  border-color: #B989E4;
+}
+
+.form button[type="submit"]{
+  background-color: #B989E4;
+  color: white;
+}
+
+.form button[type="submit"]:hover{
+  background-color: #6D4E83;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* #####-----FAQ.HTML-----##### */
+
+.main-faq h2{
+  margin: 30px 0;
+  text-align: center;
+}
+
+.tabla{
+  width: 50%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 1px solid lightgrey;
+}
+
+.tabla th, td{
+  padding: 20px 40px;
+}
+
+.tabla thead tr{
+  text-align: left;
+  font-size: larger;
+  
+  background-color: #a8d4a2;
+}
+
+.tabla tbody tr{
+  text-align: left;
+  font-weight: bold;
+  background-color: rgba(144, 238, 144, 0.164);
+}
+
+.tabla tbody tr:nth-of-type(even){
+  text-align: left;
+  background-color: white;
+}
+
+
+
+/* #####-----Inventario.HTML-----##### */
+
+button[type="button"],
+button[type="submit"]{
+  width: 100px;
+  margin: 10px auto;
+  padding: 10px;
+
+  border: 2px solid black;
+  border-radius: 20px;
+
+  color: white;
+  transition: 0.25s;
+}
+
+.btn-nuevo{
+  background-color: #00BFFF;
+}
+
+.btn-nuevo:hover{
+  background-color: #1E90FF;
+  cursor: pointer;
+}
+
+.btn-update{
+  background-color: #BA55D3;
+}
+
+.btn-update:hover{
+  background-color: #9932CC;
+  cursor: pointer;
+}
+
+.btn-delete{
+  background-color: rgba(255, 0, 0, 0.75);
+}
+
+.btn-delete:hover{
+  background-color: #DC143C;
+  cursor: pointer;
+}
+
+
+
+/* #####-----Carrito.HTML-----##### */
+
+input[type="number"] {
+  width: 70px;
+  margin: 10px auto;
+  padding: 10px;
+
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  outline: none;
+
+  transition: 0.25s;
+}
+
+.btn-comprar{
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+
+.btn-comprar:hover{
+  background-color: rgb(90, 130, 10);
+  cursor: pointer;
+}
+
+
+
+
+/* -----%%%%% Responsive %%%%%----- */
+
+@media screen and (max-width: 1000px){
+
+  .barra-nav li a{
+    padding: 10px 15px;
+  }
+
+  article img{
+    width: 150px;
+    height: 150px;
+  }
+
+
+  /* -----##### CONTACTO #####----- */
+
+  .main-contacto{
+    width: 90%;
+  }
+
+  .sec-cont-info{
+    width: 100%;
+    padding: 0;
+
+    background-color: #D0DFAE;
+  }
+
+  .sec-cont-aside{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px){
+  
+  .barra-nav,
+  .welcome,
+  .candyPacks,
+  footer{
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .candyPacks{
+    margin: 0 auto;
+    gap: 2px;
+  }
+
+  article img{
+    width: 100px;
+    height: 100px;
+  }
+
+}
+
+
+
+  
